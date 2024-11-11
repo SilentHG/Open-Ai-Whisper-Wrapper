@@ -64,8 +64,10 @@ def main():
     load_file = load_files()
     files = load_file['FILES']
     model = load_file['MODEL']
+    print(f"Using model: {model}")
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model = whisper.load_model(model, download_root="models").to(device)
+    print(f"Loaded model to {device}")
 
     for file in files:
         convert_to_text(model, file['FILE_PATH'], file['FILE_LANGUAGE'], file['TRANSLATE'], file['TIMESTAMP'])
