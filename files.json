@@ -1,0 +1,17 @@
+{
+  "MODEL": "tiny",
+  "FILES": [
+    {
+      "FILE_PATH": "./input/sample.mp4",
+      "FILE_LANGUAGE": "en",
+      "TRANSLATE": false,
+      "TIMESTAMP": true
+    },
+    {
+      "FILE_PATH": "./input/sample2.mp4",
+      "FILE_LANGUAGE": "da",
+      "TRANSLATE": false,
+      "TIMESTAMP": false
+    }
+  ]
+}
