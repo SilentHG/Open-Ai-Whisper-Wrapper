@@ -86,7 +86,7 @@ def main():
     print(f"Processing time: {elapsed_time:.2f} seconds")
 
     #write the sucesslog
-    with open('success.log', 'w') as f:
+    with open('success.log', 'a') as f:
         f.write('Date and Time: ' + time.ctime() + '\n')
         f.write('All processing completed successfully in ' + str(elapsed_time) + ' seconds\n')
 
