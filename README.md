@@ -1,4 +1,4 @@
-# Project Title
+# Open Ai Whisper Wrapper for easy usage.
 
 This project uses the Whisper model to transcribe or translate audio files to text. The transcription can include timestamps if desired.
 
