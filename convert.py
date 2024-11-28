@@ -85,6 +85,10 @@ def main():
     elapsed_time = end_time - start_time  # Calculate the elapsed time
     print(f"Processing time: {elapsed_time:.2f} seconds")
 
+    #write the sucesslog
+    with open('success.log', 'w') as f:
+        f.write('All processing completed successfully in ' + str(elapsed_time) + ' seconds')
+
 
 if __name__ == '__main__':
     main()
