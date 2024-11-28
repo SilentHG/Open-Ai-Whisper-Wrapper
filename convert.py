@@ -1,5 +1,7 @@
 import os
 import json
+import time
+
 import torch
 import whisper
 import warnings
@@ -61,6 +63,8 @@ def convert_to_text(model, file_path, file_language, TRANSLATE, TIMESTAMP):
 
 
 def main():
+    start_time = time.time()  # Record the start time
+
     load_file = load_files()
     files = load_file['FILES']
     model = load_file['MODEL']
@@ -76,6 +80,10 @@ def main():
 
     for file in files:
         convert_to_text(model, file['FILE_PATH'], file['FILE_LANGUAGE'], file['TRANSLATE'], file['TIMESTAMP'])
+
+    end_time = time.time()  # Record the end time
+    elapsed_time = end_time - start_time  # Calculate the elapsed time
+    print(f"Processing time: {elapsed_time:.2f} seconds")
 
 
 if __name__ == '__main__':
