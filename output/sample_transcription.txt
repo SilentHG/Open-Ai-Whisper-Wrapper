@@ -34,37 +34,39 @@
 [03:58 - 04:04]  So there you have kind of that funnel. And it's kind of pre both with out outsource for if it's
 [04:04 - 04:10]  power BI or if it's like BigQuery or whatever. So it's just a very simple way of transferring kind of
 [04:10 - 04:15]  the data from different sources. Because one thing we have to consider here is to
-[04:18 - 04:30]  also instantly the HQ and let's go. We lost you see and write us yourself what we need to
-[04:30 - 04:40]  consider is and then we lost you. Just which story did my phone network maybe that is better.
-[04:40 - 04:48]  Yeah, well, we need to consider is where for the new data warehouse that we need all the data
-[04:48 - 04:53]  as raw as possible and very well into the data warehouse because we're separating it into three
-[04:53 - 05:00]  layers now. So I don't know how all of that is that only providing like.
-[05:00 - 05:10]  Thank you.
-[05:11 - 05:14]  Amen.
-[05:14 - 05:16]  Yes, I'm serious. And the most important part.
-[05:16 - 05:25]  Okay. So my question is hard. Just make it very simple. Is funnel able to provide the raw
-[05:25 - 05:29]  underlying data or is it just providing like a polished ready to use a gold dimples?
-[05:33 - 05:40]  The last one. Okay. Yeah, so it's it's it's on a more aggregate level.
-[05:41 - 05:46]  Then we can get for example from the native integration between BigQuery and the NGFO.
-[05:47 - 05:53]  So it is more like a problem play data model that we can that we for example could use on
-[05:54 - 05:57]  and some of the other use cases that we have discussed for example,
-[05:57 - 06:02]  pay to use on an hour level for example. We can use funnel for that, but down to an
-[06:03 - 06:10]  event parameters and raw session or use a pseudo ID level raw data we can use funnel for that.
-[06:10 - 06:17]  So we would need to do the native integration for that part. Okay. So basically data transfer for
-[06:17 - 06:22]  raw data and then follow for the pre made models for the data.
-[06:23 - 06:30]  Yeah, but there's no way for us to modify the code that will kind of be just a product delivered
-[06:30 - 06:41]  by funnel. So we cannot customize the output in a way or no, it's a you can you can customize the output
-[06:41 - 06:48]  and it moves in funnel. But okay. So do do kind of the transformation of the data
-[06:48 - 06:54]  without but there you can do but not not that any can code. So it's not like a code
-[06:54 - 06:59]  takes really provide like to finish data form scripts is basically just a data dump into
-[06:59 - 07:09]  the data. Yeah, yes, okay. Yeah. But this is and this is this is now been talking about
-[07:09 - 07:17]  for the attributes. Like the all of the raw data from GA4 is still available in BigQuery,
-[07:17 - 07:22]  but this is just for the attributes that we're talking about using this. Okay.
-[07:22 - 07:32]  But yeah, that's exciting. How can we get started doing this? Is it like a granted data
-[07:32 - 07:40]  a service key and it just plug and play click run and everything starts working or is it a bit more
-[07:40 - 07:47]  complex than that? Yes, buddy, you have been looking into Twitter already right? So they have
-[07:48 - 07:55]  Yeah, exactly. So I tried to replicate one of the reports using the native GA4 data from BigQuery
-[07:57 - 08:04]  and I quickly found out that as Core said, the data model is quite extensive in comparison to
-[08:04 - 08:12]  the universal analytics one. For instance, when we count session IDs in GA4, it's quite different
-[08:13 - 08:20]  from the way we do it in universal analytics. And as I see with the Apple reports,
-[08:20 - 08:26]  is that we utilize the like the raw form of data to count session.
+[04:18 - 04:30]  also instantly. The HQ and let's go. We, we lost you see and write us yourself. What we need to
+[04:30 - 04:40]  consider is and then we lost you. Just switch to my phone and I work maybe that is better.
+[04:40 - 04:48]  Yeah, well, we need to consider is where for the new data warehouse that we need all the
+[04:48 - 04:53]  data as raw as possible and very well into the data warehouse because we're separating it into
+[04:53 - 05:00]  three layers now. So I don't know how all of that is that only providing like.
+[05:00 - 05:06]  Thank you.
+[05:11 - 05:14]  Here we go. Yes, yes. Yes.
+[05:14 - 05:17]  In the most important part.
+[05:17 - 05:25]  Okay. So my question is hard. Just make it very simple. Is funnel able to provide the raw
+[05:25 - 05:29]  underlying data or is it just providing like polished ready to use a goal tables?
+[05:30 - 05:42]  The last one. Okay. Yeah. So it's it's on a more aggregate level. Then we can get for example
+[05:42 - 05:50]  from the native integration between BigQuery and the NGIV. So it is more like a problem-play data model
+[05:50 - 05:56]  that we can that we for example could use on some of the other use cases that we have discussed.
+[05:56 - 06:01]  For example, a native use on an hour level for example, we can use funnel for that,
+[06:01 - 06:09]  but down to an event parameters and raw session or use a pseudo-ID level raw data we can't
+[06:09 - 06:13]  use funnel for that. So we would need to do the native integration for that part.
+[06:15 - 06:22]  Okay. So basically data transfer for raw data and follow for the pre-made models for the data.
+[06:23 - 06:30]  Yeah. But there's no way for us to modify the code that will kind of be just a product
+[06:30 - 06:38]  delivered by follow. So we cannot customize the output in a way or no.
+[06:38 - 06:43]  You can you can customize the output and the rules in funnel.
+[06:44 - 06:50]  But okay. So do do kind of the transformation of the data for that but there you can do.
+[06:50 - 06:55]  But not that any can code. So it's not like the cortex where they provide like to
+[06:56 - 06:59]  finished data form scripts. It's basically just a data dump into.
+[07:01 - 07:04]  Yeah. Yes. Okay. Yeah.
+[07:05 - 07:10]  But this is and this is this is now been talking about for the attributes.
+[07:11 - 07:18]  Like the all of the raw data from GA4 is still available in BigQuery. But this is just for the
+[07:18 - 07:22]  Apple reports that we're talking about using this. Okay.
+[07:24 - 07:31]  But yeah. That's exciting. How can we get started doing this? It's like a
+[07:31 - 07:38]  granted a service key and it just plug and play. Click run and everything starts working or
+[07:38 - 07:40]  is it a bit more complex than that?
+[07:41 - 07:52]  Yeah. Yeah. Yeah. Yeah. Yeah. Exactly. So I tried to replicate one of the reports
+[07:53 - 07:58]  using the native GA4 data from BigQuery and I quickly found out that as
+[07:58 - 08:06]  Core said, the data model is quite extensive in comparison to the universal analytics one.
+[08:07 - 08:14]  For instance, when we count session IDs in GA4, it's quite different from the way we do it
+[08:14 - 08:22]  in universal analytics. And as I see with the Apple reports, it's that we utilize the
+[08:23 - 08:26]  like the rawest form of data to count session.
