@@ -87,7 +87,8 @@ def main():
 
     #write the sucesslog
     with open('success.log', 'w') as f:
-        f.write('All processing completed successfully in ' + str(elapsed_time) + ' seconds')
+        f.write('Date and Time: ' + time.ctime() + '\n')
+        f.write('All processing completed successfully in ' + str(elapsed_time) + ' seconds\n')
 
 
 if __name__ == '__main__':
