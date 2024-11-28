@@ -64,8 +64,13 @@ def main():
     load_file = load_files()
     files = load_file['FILES']
     model = load_file['MODEL']
+    gpu = load_file['GPU']
     print(f"Using model: {model}")
-    device = "cuda" if torch.cuda.is_available() else "cpu"
+    if gpu:
+        device = "cuda"
+    else:
+        device = "cpu"
+    # device = "cuda" if torch.cuda.is_available() else "cpu"
     model = whisper.load_model(model, download_root="models").to(device)
     print(f"Loaded model to {device}")
 
